@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bebala.uts.Main2Activity">
+
+    <TextView
+        android:id="@+id/itemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:textSize="20dp"
+        />
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/itemTextView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ff0"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panjang :"
+            android:id="@+id/TV1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lebar :"
+            android:layout_marginTop="70dp"
+            android:id="@+id/TV2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/ET1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/ET1"
+            android:id="@+id/ET2"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="54dp"
+        android:text="Luas"
+        android:id="@+id/button"
+        android:onClick="button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/itemTextView"
+        android:layout_toRightOf="@+id/itemTextView"
+        android:text="Keliling"
+        android:id="@+id/button2"
+        android:onClick="button2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hasil"/>
+</RelativeLayout>
